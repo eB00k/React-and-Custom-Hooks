@@ -1,6 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { UseOnlineStatus, Home } from "../pages";
-
+import { UseOnlineStatus, Home, UseLocalStorage } from "../pages";
 
 const router = createBrowserRouter([
   {
@@ -10,6 +9,10 @@ const router = createBrowserRouter([
   {
     path: "/useOnlineStatus",
     element: <UseOnlineStatus />,
+  },
+  {
+    path: "/useLocalStorage",
+    element: <UseLocalStorage />,
   },
 ]);
 
